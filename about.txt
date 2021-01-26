@@ -1,0 +1,1 @@
+This is where all files required to build and deploy the game will live. This may vary from project to project. For example, if using Tempest, this would be where to put the engine(if that was even a thing, which could be cool) and game files. For a project based in GoDot, this would be where to create the GoDot Project.
