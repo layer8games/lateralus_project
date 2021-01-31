@@ -4,17 +4,23 @@ enum FACING { front, back, left, right }
 
 export var _speed = 50.0
 export var _playerNumber = 0
+export(FACING) var _initialFacing = FACING.front
 
 var _velocity: Vector2 = Vector2()
 var _facing = FACING.front
 var _attacking: bool = false
+var _turn = false
 
 onready var _animation = get_node("AnimatedSprite")
+
+func Playing():
+	return _turn
 
 func _ready():
 	assert(_playerNumber > 0, "You never set if you are player 1 or player 2")
 	_animation.connect("animation_finished", self, "_NextAnimation")
-	_animation.play("idle_front")
+	_facing = _initialFacing
+	_Animate()
 
 func _process(delta):
 	_InputCheck()
@@ -24,17 +30,20 @@ func _process(delta):
 
 
 func _Attack():
-	print("ATTACK")
-	_attacking = !_attacking
+	_attacking = true
 
+
+func StartRound():
+	_turn = true
 
 func _EndRound():
-	pass
+	_turn = false
 
 
 func _InputCheck():
 	if _attacking:
-		print("still attacking")
+		return
+	elif not _turn:
 		return
 	
 	if _playerNumber == 1:
@@ -137,14 +146,12 @@ func _IdleAnimation():
 
 
 func _NextAnimation():
-	print("PLAY NEXT ANIMATION")
-	print(_animation.animation)
 	if _animation.animation == "attack_front" or \
-	_animation.animation == "attack_back" or \
-	_animation.animation == "attack_right" or \
-	_animation.animation == "attack_left" :
-		print("Get out of attack now....")
+	   _animation.animation == "attack_back" or \
+	   _animation.animation == "attack_right" or \
+	   _animation.animation == "attack_left" :
 		_IdleAnimation()
 # This may be a bad place. If anything else is found that needs to use
 # the _attacking flag, this may need to be wrapped into a larger logic
 		_attacking = false
+		_EndRound()
