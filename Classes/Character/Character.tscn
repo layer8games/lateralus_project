@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Assets/Textures/Humans/blue_plate_knight/Animations/human_blue_plate_spriteframes.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://Assets/Textures/Shadowlings/warrior/Animations/shadowling_warrior_spriteframes.tres" type="SpriteFrames" id=1]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 15.1535
@@ -10,7 +10,7 @@ height = 0.0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 1 )
-animation = "attack_left"
+animation = "attack_right"
 frame = 3
 playing = true
 
