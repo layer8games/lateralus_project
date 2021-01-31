@@ -1,0 +1,1 @@
+If a .aseprite file is in this directory, that means that only the basic character design has been done. If there is a directory named for an asset, it means that animations have been done, or additional files exist for this specific asset.
