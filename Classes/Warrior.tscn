@@ -1,20 +1,20 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Assets/Textures/Shadowlings/warrior/Animations/shadowling_warrior_spriteframes.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://src/Character.gd" type="Script" id=2]
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 15.1535
-height = 0.0
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 11.2945, 18.0625 )
 
-[node name="Character" type="KinematicBody2D"]
+[node name="Warrior" type="KinematicBody2D"]
+script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 1 )
-animation = "attack_right"
-frame = 3
-playing = true
+animation = "idle_front"
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2( -0.235977, 11.5888 )
+position = Vector2( 1.52588e-05, 7.01539 )
 shape = SubResource( 1 )
