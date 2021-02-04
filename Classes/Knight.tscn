@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/Character.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Textures/Humans/blue_plate_knight/Animations/human_blue_plate_spriteframes.tres" type="SpriteFrames" id=2]
+[ext_resource path="res://Assets/Textures/Humans/blue_plate_knight/human_blue_plate_spriteframes.tres" type="SpriteFrames" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 12.236, 17.5888 )
