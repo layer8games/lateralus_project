@@ -1,0 +1,37 @@
+Here is the plan: 
+
+1. Writing
+
+	Start with the first section of the game. This is the first part that is going to be made. This must include the following: 
+
+	1. All first, second and third teir character sheets.
+	2. All locations and location backstories. 
+	3. All narative points to be hit by quests. 
+
+	It will not include:
+
+	1. Dialog.
+	2. Quest text.
+	3. Writing for in game fiction.
+
+	These will be developed later, as cards on the wall, prioritized as any other item would be.
+
+	These are the goals for what needed to start production on the writing side. Practically, it means this: 
+
+	First: Finish reading the Gotham writing book. 
+	Second: Finish reading the video game writing book.
+	Third: Develop vision for game.
+
+2. Art
+
+	Start with learning how to draw. Draw the concept designs for each character that was writen. This will help you know how to portray them in the game. Once this is finished, explore different methods for creating the end product. Make a pixel art version of Merak, and make a 3D model. See which one feels better, which one looks better. How long does it take to make each one? Which one did you like working on best? You'll have to do all of it... keep that in mind. 
+
+	First: Finish Udemy drawing course. 
+	Second: plan later. 
+
+3. Production
+
+	Once you have the assets to make the basic version of the gameplay, implement combat version 1. Start there. Once combat is finished, move on to non combat roles. Then look at each thing a character can do as a feature, and queue up a list of features to add into the game. Do the same thing with areas in the game, and finally AI. Once the AI and areas are in the game, you can begin scripting in the story aspect of the game. From there, making more games should be simple. Add add add add add. If I do it right, I wont have to remake any of this stuff to work on more episodes. 
+
+
+Once production is finished on the first section of the game, repeat for the second section. If more characters are needed, or new props are needed to create the environment, create them, then add them into the production like before. Try tackling the game one section at a time. Linearly. Release when the story is done.
