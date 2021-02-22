@@ -1,0 +1,70 @@
+Context: I'm watching Helm's Deep, thinking about blizzard and thinking about turned based combat. The question I am looking at is how to emulate the feeling of this sequence in a game. I have some thoughts about what happens in the opening sequence of the Lord of the Rings that could accomplish much. I need to watch this again and think through this again. I need to think about every scene, every event in terms of how I could make it mechanically. Something I could make without having to take control away from the player. 
+
+Design Rule 1: DO NOT EVER TAKE CONTROL AWAY FROM THE PLAYER, if you can help it.
+
+1. When the player controls the outcome, it should be turn based. 
+
+What this means can have vast implications. First, take the opening part of Helms Deep. The archers are waiting for Aragorn to call the shot. This could be looked at as a player turn. 
+
+2. Turn State
+
+This is a complex notion. I have tried to type it up a few times... Here it goes again. 
+
+Everything in the game will run in real time until a player is in combat (maybe within a certain range... online mp is a goal. Yet another reason why working at blizzard would help make this game better! but GoDot can do network... and I can limit it to 2 player.) 
+
+In order for combat to engage, first an NPC must queue to engage an entity. When the cpu controls these entities, these combats will happen in real time. The logic should be fast enough for that. However, once an NPC queues to engage in combat with the Player controlled character instead of the cpu controlled character, the player will be notified that they are about the to in a combat state. 
+
+While in a combat state, everything is turn based. Ultimately, there are 2 turns to be played. 
+
+First, the Player and CPU will play a turn for all Entities in their respective control. This may overlap, but, importantly, each Entity that is engaged in combat will get a turn in a round. Put another way, a Round is 1 turn per Entity in combat with the Player controlled Entities. 
+
+Second, Entities that are NOT in combat will all have a turn. This will be handled by the cpu, and should only take a moment. To the player, it should just look like everything around them takes one step, or one action, all at the same time.
+
+The purpose of this design allow the Player to control their party. This is especially important to help the Player gain a connection to these character. I want them to feel like they are close with them, like they are one. Maybe even make it a link, something to do with the swords, or something to do with the nature of fate, or the Power. Maybe this is what clans are, and some just grow bigger and bigger. Clans within clans... I don't know. There is more to think about there. 
+
+In Helms Deep, Aragorn ordered the archers to fire. Him doing this can be looked at the the player taking part in the second section of the Round cycle. This needs a name. 
+
+Entity States in Relation to the Player, in terms of Combat:
+NotEngaged
+Queued
+Engaged
+
+
+Another important thing about this design. In a big battle, like Helm's Deep, the Player may not be the only one to attack an enemy. They may be engaged by allies who are not part of the party or the combat! This means, there is a chance that sometimes, maybe at the call of the player... this needs thought out, but sometimes, the enemies who are in combat will be killed between Round, when the World Round takes place. 
+
+Is this ok? I don't know. Maybe players should be the only ones to actually need to kill NPC's in combat. 
+
+3. Story Climax Payoff Ideas
+
+Big battle should really test all of the skill the the player has. 
+
+Legolas skips his ass down the stairs. He didn't ever do that in the Fellowship of the Ring! But that is because he grew as a character. As you grow, you should have more options with your abilities. The Party fight so well together because they have been fighting for a while now.
+
+4. Game Release Structure
+
+Split the party into different games, where one of the characters takes over as main.
+
+These games will be released as episodes, and a collection of episodes make up a season. I really want to rename this though. I think something like Legend -> Epic -> Story works.
+
+Stories are quest zones. 
+Epics are fully released games. 
+Legends are a collection of games, with highly connected plots, overlapping characters, shared combat and gameplay mechanics, 
+
+Other ideas to consider:
+
+Campaigns
+Books
+Histories
+Sagas
+Journals
+Chronicles
+erudition
+aphorisms 
+
+5. Fodder makes for feeling powerful
+
+When the Fellowship fights orcs, or when Luke is killing Stormtroopers, they do so without much effort. They die in one hit. But named characters... they can take a few blows and give blows. This means you can give players tons of people to kill to help them feel like they are strong.
+
+6. Make a Big Party
+
+The Fellowship had 9. Just saying... that led to 3 split off stories. Think ahead on these things.
