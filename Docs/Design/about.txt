@@ -1,1 +1,0 @@
-All docs related to the design and mechanics of the game go here. This should be full of spreadsheets and text docs.

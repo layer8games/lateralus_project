@@ -1,3 +1,0 @@
-name: "Brock Tigrin says Run! Don't trust any of them!"
-	type: book
-	desc: A book written by Brock Tigrin, who later becomes Lord Shadow's Reach.
